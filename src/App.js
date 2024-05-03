@@ -1,7 +1,7 @@
 function App() {
   return (
     <main>
-      <h1>Hi, I'm (your name)</h1>
+      <h1>Hi, I'm _______</h1>
       <img alt="My profile pic" src="https://via.placeholder.com/350" />
       <h2>About Me</h2>
       <p>
@@ -18,6 +18,29 @@ function App() {
         <a href="https://github.com">GitHub</a>
         <a href="https://linkedin.com">LinkedIn</a>
       </div>
+
+      {/* Newsletter Signup Form */}
+      <form>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label htmlFor="technology">Technology</label>
+        <input type="checkbox" id="technology" name="interests" />
+
+        <label htmlFor="science">Science</label>
+        <input type="checkbox" id="science" name="interests" />
+
+        <label htmlFor="art">Art</label>
+        <input type="checkbox" id="art" name="interests" />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      {/* Success Message */}
+      <p id="successMessage" style={{ display: 'none' }}>Form submitted successfully</p>
     </main>
   );
 }
